@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+/* دعم الوضع الداكن عند تفعيله */
+.dark body {
+  background-color: #020617;
+  color: #f8fafc;
+}
