@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* الخطوط العربية */
+.font-amiri {
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* تخصيص السكرول بار ليناسب الوضعين الفاتح والداكن */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0fdf4;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 4px;
+}
+
+/* أنيميشن بسيط عند ظهور السور */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.quran-text {
+  line-height: 2.2;
+  letter-spacing: 0.5px;
+}
