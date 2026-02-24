@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-app: #f0fdf4; /* emerald-50 */
+    --text-app: #064e3b; /* emerald-900 */
+  }
+  .dark {
+    --bg-app: #020617; /* slate-950 */
+    --text-app: #f8fafc; /* slate-50 */
+  }
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-app);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.font-amiri {
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+}
