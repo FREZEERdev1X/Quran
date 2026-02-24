@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* دعم الوضع الداكن في Tailwind */
+@layer base {
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
+/* الخطوط */
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+/* تحسين السكرول بار للوضع الداكن */
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border: 2px solid #0f172a;
+}
+
+.quran-text {
+  line-height: 2.5;
+  @apply text-slate-800 dark:text-slate-200;
+}
