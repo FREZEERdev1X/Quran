@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+[span_4](start_span)/* دعم الوضع الداكن الشامل[span_4](end_span) */
+@layer base {
+  body {
+    @apply transition-colors duration-300;
+  }
+}
+
+/* تنسيق عام للخلفية في الوضعين */
+body {
+  background-color: #f0fdf4; /* emerald-50 */
+}
+
+.dark body {
+  background-color: #020617; [span_5](start_span)/* slate-950[span_5](end_span) */
+  color: #f8fafc;
+}
+
+/* إصلاح تداخل ألوان البطاقات */
+.dark .bg-white {
+  background-color: #0f172a; [span_6](start_span)/* slate-900[span_6](end_span) */
+}
+
+.dark .border-emerald-100 {
+  border-color: #1e293b; [span_7](start_span)/* slate-800[span_7](end_span) */
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.quran-text {
+  line-height: 2.5;
+  @apply text-slate-800 dark:text-slate-200;
+}
